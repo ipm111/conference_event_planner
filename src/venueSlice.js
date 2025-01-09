@@ -40,6 +40,7 @@ export const venueSlice = createSlice({
    
     incrementQuantity: (state, action) => {
       const { payload: index } = action;
+      //const index = action.payload;
       if (state[index]) {
         if (state[index].name === " Auditorium Hall (Capacity:200)" && state[index].quantity >= 3) {
           return;        }
